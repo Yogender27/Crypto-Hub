@@ -1,0 +1,23 @@
+.exchange-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .exchange-card a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .exchange-card a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .exchange-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+  
