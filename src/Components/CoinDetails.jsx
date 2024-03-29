@@ -92,19 +92,19 @@ function CoinDetails() {
   }
 
   return (
-    <div className="m-2">
+    <div className="">
       {loading ? (
         <Loaders />
       ) : (
-        <div className="w-full">
-          <div className="mx-20 my-5">
+        <div className="mx-8 my-8">
+          <div className="md:mx-20 md:my-5">
             <Chart arr={chartArray} currency={currencySymbol} days={days} />
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex md:justify-center md:items-center md:w-full overflow-y-hidden ">
             {/*BUtton*/}
             {btnArr.map((i) => (
               <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline m-2"
+                className="bg-blue-500 hover:bg-blue-700 text-white md:text-lg text-sm md:font-bold  md:px-4 md:py-4 rounded focus:outline-none focus:shadow-outline m-2 py-1 px-2 md:w-[64px]"
                 key={i}
                 onClick={() => statsChange(i)}
               >
@@ -228,7 +228,7 @@ function CoinDetails() {
             </h2>
             <h2>
               Circulating Supply:{" "}
-              <span className="text-red-600">
+              <span className="text-green-600">
                 {coin.market_data.circulating_supply}
               </span>
             </h2>
@@ -241,14 +241,14 @@ function CoinDetails() {
             </h2>
             <h2>
               All Time High:{" "}
-              <span className="text-red-600">
+              <span className="text-green-600">
                 {" "}
                 {`${currencySymbol}${coin.market_data.ath[currency]}`}
               </span>
             </h2>
             <h2>
               Market Cap:{" "}
-              <span className="text-red-600">
+              <span className="text-gray-500">
                 {" "}
                 {`${currencySymbol}${coin.market_data.market_cap[currency]}`}
               </span>

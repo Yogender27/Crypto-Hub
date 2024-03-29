@@ -42,7 +42,7 @@ function Exchange() {
       {loading ? (
         <Loaders />
       ) : (
-        <div className='flex flex-wrap justify-center'>
+        <div className='flex flex-wrap justify-center my-4 py-4'>
           {exchanges.map((details) => (
             <ExchangeCArd
               key={details.id}
